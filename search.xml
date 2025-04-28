@@ -17,12 +17,19 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+      <tags>
+        <tag>demo</tag>
+      </tags>
   </entry>
   <entry>
     <title>myword</title>
     <url>/2025/04/28/myword/</url>
     <content><![CDATA[<h2 id="hey-its-wonderful"><a href="#hey-its-wonderful" class="headerlink" title="hey, its wonderful"></a>hey, its wonderful</h2>]]></content>
+      <categories>
+        <category>cateDemo</category>
+      </categories>
       <tags>
+        <tag>demo</tag>
         <tag>tags</tag>
       </tags>
   </entry>
