@@ -36,9 +36,9 @@
     <category term="cateDemo" scheme="http://briuplk.github.io/categories/cateDemo/"/>
     
     
-    <category term="tags" scheme="http://briuplk.github.io/tags/tags/"/>
-    
     <category term="demo" scheme="http://briuplk.github.io/tags/demo/"/>
+    
+    <category term="tags" scheme="http://briuplk.github.io/tags/tags/"/>
     
   </entry>
   
