@@ -3,11 +3,11 @@
   <title>myblog</title>
   
   <subtitle>its subtitle</subtitle>
-  <link href="http://briuplk.github.io/atom.xml" rel="self"/>
+  <link href="http://guogananren.github.io/atom.xml" rel="self"/>
   
-  <link href="http://briuplk.github.io/"/>
+  <link href="http://guogananren.github.io/"/>
   <updated>2025-04-29T02:42:13.908Z</updated>
-  <id>http://briuplk.github.io/</id>
+  <id>http://guogananren.github.io/</id>
   
   <author>
     <name>Link</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>修</title>
-    <link href="http://briuplk.github.io/2025/04/29/%E4%BF%AE/"/>
-    <id>http://briuplk.github.io/2025/04/29/%E4%BF%AE/</id>
+    <link href="http://guogananren.github.io/2025/04/29/%E4%BF%AE/"/>
+    <id>http://guogananren.github.io/2025/04/29/%E4%BF%AE/</id>
     <published>2025-04-29T02:39:17.182Z</published>
     <updated>2025-04-29T02:42:13.908Z</updated>
     
@@ -33,17 +33,17 @@
     
     
     
-    <category term="杂" scheme="http://briuplk.github.io/categories/%E6%9D%82/"/>
+    <category term="杂" scheme="http://guogananren.github.io/categories/%E6%9D%82/"/>
     
     
-    <category term="oc" scheme="http://briuplk.github.io/tags/oc/"/>
+    <category term="oc" scheme="http://guogananren.github.io/tags/oc/"/>
     
   </entry>
   
   <entry>
     <title>myword</title>
-    <link href="http://briuplk.github.io/2025/04/28/myword/"/>
-    <id>http://briuplk.github.io/2025/04/28/myword/</id>
+    <link href="http://guogananren.github.io/2025/04/28/myword/"/>
+    <id>http://guogananren.github.io/2025/04/28/myword/</id>
     <published>2025-04-28T01:50:38.000Z</published>
     <updated>2025-04-28T07:27:45.098Z</updated>
     
@@ -57,19 +57,19 @@
     
     
     
-    <category term="cateDemo" scheme="http://briuplk.github.io/categories/cateDemo/"/>
+    <category term="cateDemo" scheme="http://guogananren.github.io/categories/cateDemo/"/>
     
     
-    <category term="demo" scheme="http://briuplk.github.io/tags/demo/"/>
+    <category term="demo" scheme="http://guogananren.github.io/tags/demo/"/>
     
-    <category term="tags" scheme="http://briuplk.github.io/tags/tags/"/>
+    <category term="tags" scheme="http://guogananren.github.io/tags/tags/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://briuplk.github.io/2025/04/27/hello-world/"/>
-    <id>http://briuplk.github.io/2025/04/27/hello-world/</id>
+    <link href="http://guogananren.github.io/2025/04/27/hello-world/"/>
+    <id>http://guogananren.github.io/2025/04/27/hello-world/</id>
     <published>2025-04-27T09:58:46.938Z</published>
     <updated>2025-04-28T07:23:28.455Z</updated>
     
@@ -84,7 +84,7 @@
     
     
     
-    <category term="demo" scheme="http://briuplk.github.io/tags/demo/"/>
+    <category term="demo" scheme="http://guogananren.github.io/tags/demo/"/>
     
   </entry>
   
