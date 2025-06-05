@@ -22,30 +22,33 @@
     var CONFIG = {"hostname":"guogananren.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="its description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="myblog">
-<meta property="og:url" content="http://guogananren.github.io/index.html">
+  <meta name="description" content="5. 如何获取安全的undefined值1let a &#x3D; void 0 6. 使用Object.is()与比较操作符“&#x3D;&#x3D;”和“&#x3D;&#x3D;&#x3D;”的区别双等号：如果两边的类型不一致，会进行类型强制转换后再进行比较三等号：如果两边的类型不一致，直接返回falseObject.is()：一般情况下和三等号一致。处理了一些特殊情况，比如-0和+0不再相等，两个Na">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jump（二）">
+<meta property="og:url" content="http://guogananren.github.io/2025/06/03/20250603/index.html">
 <meta property="og:site_name" content="myblog">
-<meta property="og:description" content="its description">
+<meta property="og:description" content="5. 如何获取安全的undefined值1let a &#x3D; void 0 6. 使用Object.is()与比较操作符“&#x3D;&#x3D;”和“&#x3D;&#x3D;&#x3D;”的区别双等号：如果两边的类型不一致，会进行类型强制转换后再进行比较三等号：如果两边的类型不一致，直接返回falseObject.is()：一般情况下和三等号一致。处理了一些特殊情况，比如-0和+0不再相等，两个Na">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-06-03T09:27:55.664Z">
+<meta property="article:modified_time" content="2025-06-05T07:08:11.596Z">
 <meta property="article:author" content="Link">
+<meta property="article:tag" content="June">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://guogananren.github.io/">
+<link rel="canonical" href="http://guogananren.github.io/2025/06/03/20250603/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>myblog</title>
+  <title>jump（二） | myblog</title>
   
 
 
@@ -188,9 +191,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -206,10 +210,9 @@
       <meta itemprop="name" content="myblog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/06/03/20250603/" class="post-title-link" itemprop="url">jump（二）</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          jump（二）
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -241,7 +244,14 @@
                 </span>
             </span>
 
-          <br>
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
@@ -266,7 +276,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="5-如何获取安全的undefined值"><a href="#5-如何获取安全的undefined值" class="headerlink" title="5. 如何获取安全的undefined值"></a>5. 如何获取安全的undefined值</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="keyword">void</span> <span class="number">0</span></span><br></pre></td></tr></table></figure>
+        <h4 id="5-如何获取安全的undefined值"><a href="#5-如何获取安全的undefined值" class="headerlink" title="5. 如何获取安全的undefined值"></a>5. 如何获取安全的undefined值</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="keyword">void</span> <span class="number">0</span></span><br></pre></td></tr></table></figure>
 <h4 id="6-使用Object-is-与比较操作符“-”和“-”的区别"><a href="#6-使用Object-is-与比较操作符“-”和“-”的区别" class="headerlink" title="6. 使用Object.is()与比较操作符“&#x3D;&#x3D;”和“&#x3D;&#x3D;&#x3D;”的区别"></a>6. 使用Object.is()与比较操作符“&#x3D;&#x3D;”和“&#x3D;&#x3D;&#x3D;”的区别</h4><p>双等号：如果两边的类型不一致，会进行类型强制转换后再进行比较<br>三等号：如果两边的类型不一致，直接返回false<br>Object.is()：一般情况下和三等号一致。处理了一些特殊情况，比如-0和+0不再相等，两个NaN是相等的。</p>
 <h4 id="7-JavaScript的包装类型"><a href="#7-JavaScript的包装类型" class="headerlink" title="7. JavaScript的包装类型"></a>7. JavaScript的包装类型</h4><p>在JavaScript中，基本类型是没有属性和方法的，但是为了便于操作基本类型的值，在调用基本类型的属性或方法时JavaScript会在后台隐式地将基本类型转换为对象。</p>
 <h4 id="8-为什么有BigInt的提案"><a href="#8-为什么有BigInt的提案" class="headerlink" title="8. 为什么有BigInt的提案"></a>8. 为什么有BigInt的提案</h4><p>JavaScript中<code>Number.MAX_SAFE_INTEGER</code>表示最大安全数字，即在这个范围内不会出现精度丢失。但是一旦超过这个范围，js就会出现计算不准确的情况。</p>
@@ -301,447 +311,65 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> p = <span class="keyword">new</span> <span class="title class_">Proxy</span>(target, handler)</span><br></pre></td></tr></table></figure>
 <p>target代表需要添加代理的对象，handler用来自定义对象中的操作，比如可以用来自定义set和get方法。<br>实现数据响应式：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="title function_">onWatch</span> = (<span class="params">obj ,setBind, getLogger</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">let</span> handler = &#123;</span><br><span class="line">    <span class="title function_">get</span>(<span class="params">target, property, receiver</span>) &#123;</span><br><span class="line">      <span class="title function_">getLogger</span>(target, property)</span><br><span class="line">      <span class="keyword">return</span> <span class="title class_">Reflect</span>.<span class="title function_">get</span>(target, property, receiver)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">set</span>(<span class="params">target, property, value, receiver</span>) &#123;</span><br><span class="line">      <span class="title function_">setBind</span>(value, property)</span><br><span class="line">      <span class="keyword">return</span> <span class="title class_">Reflect</span>.<span class="title function_">set</span>(target,property, value)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Proxy</span>(obj ,handler)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> obj = &#123; <span class="attr">a</span>: <span class="number">1</span> &#125;</span><br><span class="line"><span class="keyword">let</span> p = <span class="title function_">onWatch</span>(</span><br><span class="line">  obj,</span><br><span class="line">  <span class="function">(<span class="params">v, property</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`监听到属性<span class="subst">$&#123;property&#125;</span>改变为<span class="subst">$&#123;v&#125;</span>`</span>)</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="function">(<span class="params">target, property</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`<span class="subst">$&#123;property&#125;</span> = <span class="subst">$&#123;target[property]&#125;</span>`</span>)</span><br><span class="line">  &#125;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">p.<span class="property">a</span> = <span class="number">2</span> <span class="comment">// 监听到属性a改变为2</span></span><br><span class="line">p.<span class="property">a</span> <span class="comment">// a = 2</span></span><br></pre></td></tr></table></figure>
-      
     </div>
 
     
     
     
+        <div class="reward-container">
+  <div>在这里打赏.</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Link 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Link
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://guogananren.github.io/2025/06/03/20250603/" title="jump（二）">http://guogananren.github.io/2025/06/03/20250603/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/June/" rel="tag"># June</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://guogananren.github.io/2025/05/07/20250507/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Link">
-      <meta itemprop="description" content="its description">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="myblog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/05/07/20250507/" class="post-title-link" itemprop="url">jump（一）</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2025-05-07 14:08:28 / 修改时间：17:01:56" itemprop="dateCreated datePublished" datetime="2025-05-07T14:08:28+08:00">2025-05-07</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/8%E6%96%87/" itemprop="url" rel="index"><span itemprop="name">8文</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/8%E6%96%87/javascript/" itemprop="url" rel="index"><span itemprop="name">javascript</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2.8k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>5 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h4 id="1-JavaScript有哪些数据类型"><a href="#1-JavaScript有哪些数据类型" class="headerlink" title="1. JavaScript有哪些数据类型"></a>1. JavaScript有哪些数据类型</h4><h5 id="基本数据类型：undefined-null-string-boolean-number-bigInt-symbol"><a href="#基本数据类型：undefined-null-string-boolean-number-bigInt-symbol" class="headerlink" title="基本数据类型：undefined,null,string,boolean,number,bigInt,symbol"></a>基本数据类型：<code>undefined</code>,<code>null</code>,<code>string</code>,<code>boolean</code>,<code>number</code>,<code>bigInt</code>,<code>symbol</code></h5><h5 id="引用数据类型：object"><a href="#引用数据类型：object" class="headerlink" title="引用数据类型：object"></a>引用数据类型：<code>object</code></h5><h5 id="a-类型大小写问题"><a href="#a-类型大小写问题" class="headerlink" title="a.类型大小写问题"></a>a.类型大小写问题</h5><p>数据类型通常以小写开头出现，首字母大写一般被认做是构造函数</p>
-<h5 id="b-symbol和bigInt探究"><a href="#b-symbol和bigInt探究" class="headerlink" title="b.symbol和bigInt探究"></a>b.symbol和bigInt探究</h5><h6 id="symbol"><a href="#symbol" class="headerlink" title="symbol"></a><code>symbol</code></h6><p><font color="orange">symbol是es6（es2015）引入，代表独一无二的值，可以用于创建对象的私有属性和方法，避免命名冲突。</font></p>
-<ul>
-<li>唯一性：symbol最重要的特征就是唯一性，即使使用相同的描述创建多个symbol，他们的值也不会相同。</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> sym1 = <span class="title class_">Symbol</span>(<span class="string">&#x27;test&#x27;</span>)</span><br><span class="line"><span class="keyword">const</span> sym2 = <span class="title class_">Symbol</span>(<span class="string">&#x27;test&#x27;</span>)</span><br><span class="line">sym1 === sym2 <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>原始数据类型：symbol是原始数据类型，不是对象，所以不能使用new关键字来创建，直接调用Symbol()函数即可。</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 正确方式</span></span><br><span class="line"><span class="keyword">const</span> sym = <span class="title class_">Symbol</span>()</span><br><span class="line"><span class="comment">// 错误方式</span></span><br><span class="line"><span class="comment">// const sym = new Symbol()</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>不可枚举：当symbol作为对象的属性名时，默认不会出现在<code>for...in</code>、<code>for...if</code>循环中，也不会被Object.keys()、Object.getOwnPrototypeNames()等方法获取，可用于创建对象的私有属性。</li>
-</ul>
-<h6 id="bigInt"><a href="#bigInt" class="headerlink" title="bigInt"></a><code>bigInt</code></h6><font color="orange">
-bigInt用于表示任意大的整数，在bigInt出现之前number类型仅能安全地表示从`-2^53 + 1`到`2^53 - 1`范围内的整数，超出这个范围的整数在进行运算时就可能出现精度丢失的情况。而bigInt则不存在这样的限制，他可以精确的表示任意大小的整数。
-</font>
-
-<ul>
-<li>创建bigInt的方式：</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 在整数后面添加n后缀</span></span><br><span class="line"><span class="keyword">const</span> bigInt1 = <span class="number">9007199254740991n</span></span><br><span class="line"><span class="comment">// 使用bigInt()函数</span></span><br><span class="line"><span class="keyword">const</span> bigInt2 = <span class="title class_">BigInt</span>(<span class="number">9007199254740991</span>)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>运算操作<br>bigInt支持大多数常见的数学运算。像加减乘除法等，但不支持一元的<code>+</code>运算符</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = <span class="number">10n</span></span><br><span class="line"><span class="keyword">const</span> b = <span class="number">20n</span></span><br><span class="line"><span class="keyword">const</span> sum = a + b <span class="comment">// 30n</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 一元+运算</span></span><br><span class="line"><span class="keyword">let</span> i = <span class="number">10n</span></span><br><span class="line">+i <span class="comment">// 会报错</span></span><br><span class="line">++i <span class="comment">// 11n</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>比较操作<br>bigInt能够和其他bigInt进行比较，也能和number类型进行比较。不过在在比较时，bigInt和number和是不相等的，即使他们在数值上一样。</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> bigIntNum = <span class="number">10n</span>;</span><br><span class="line"><span class="keyword">const</span> regularNum = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(bigIntNum === regularNum); <span class="comment">// 输出: false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(bigIntNum == regularNum);  <span class="comment">// 输出: true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(bigIntNum &gt; <span class="number">5</span>);           <span class="comment">// 输出: true</span></span><br></pre></td></tr></table></figure>
-<h5 id="c-存储方式探究"><a href="#c-存储方式探究" class="headerlink" title="c.存储方式探究"></a>c.存储方式探究</h5><table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>存储位置</th>
-<th>存储方式详情</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>undefined</td>
-<td>栈内存</td>
-<td>占据特定内存位置以代表未定义状态</td>
-</tr>
-<tr>
-<td>null</td>
-<td>栈内存</td>
-<td>占据特定内存位置以代表空对象指针状态</td>
-</tr>
-<tr>
-<td>string</td>
-<td>栈内存&#x2F;栈内存指向堆内存</td>
-<td>较短字符串直接存储于栈内存；长字符串栈内存存储指向堆内存中实际字符串数据的引用</td>
-</tr>
-<tr>
-<td>number</td>
-<td>栈内存</td>
-<td>按照IEEE 754双精度64位浮点数标准直接存储数值</td>
-</tr>
-<tr>
-<td>boolean</td>
-<td>栈内存</td>
-<td>直接存储true或false</td>
-</tr>
-<tr>
-<td>bigInt</td>
-<td>栈内存指向堆内存</td>
-<td>栈内存存储对堆内存实际大整数数据的引用</td>
-</tr>
-<tr>
-<td>symbol</td>
-<td>栈内存指向堆内存</td>
-<td>栈内存存储对堆内存实际symbol数据的引用</td>
-</tr>
-<tr>
-<td>object</td>
-<td>栈内存指向堆内存</td>
-<td>栈内存存储指向堆内存中对象实际存储位置的引用，对象具体内容存储于堆内存</td>
-</tr>
-</tbody></table>
-<hr>
-<h4 id="2-数据类型的检测方式有哪些"><a href="#2-数据类型的检测方式有哪些" class="headerlink" title="2. 数据类型的检测方式有哪些"></a>2. 数据类型的检测方式有哪些</h4><h5 id="a-typeof"><a href="#a-typeof" class="headerlink" title="a.typeof"></a>a.<code>typeof</code></h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> <span class="literal">undefined</span>) <span class="comment">// &#x27;undefined&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> <span class="literal">null</span>) <span class="comment">// &#x27;object&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> <span class="string">&#x27;str&#x27;</span>) <span class="comment">// &#x27;string&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> <span class="number">123</span>) <span class="comment">// &#x27;number&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> <span class="literal">true</span>) <span class="comment">// &#x27;boolean&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> <span class="number">123n</span>) <span class="comment">// &#x27;bigint&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> <span class="title class_">Symbol</span>(<span class="string">&#x27;test&#x27;</span>)) <span class="comment">// &#x27;symbol&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> &#123;&#125;) <span class="comment">// &#x27;object&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> []) <span class="comment">// &#x27;object&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">typeof</span> <span class="keyword">function</span>(<span class="params"></span>) &#123;&#125;) <span class="comment">// &#x27;function&#x27;</span></span><br></pre></td></tr></table></figure>
-<p>其中数组、对象、null都会被判定为object，其他判断正常</p>
-<h5 id="b-instanceof"><a href="#b-instanceof" class="headerlink" title="b.instanceof"></a>b.<code>instanceof</code></h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;str&#x27;</span> <span class="keyword">instanceof</span> <span class="title class_">String</span>) <span class="comment">// false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="number">123</span> <span class="keyword">instanceof</span> <span class="title class_">Number</span>) <span class="comment">// false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="literal">false</span> <span class="keyword">instanceof</span> <span class="title class_">Boolean</span>) <span class="comment">// false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(&#123;&#125; <span class="keyword">instanceof</span> <span class="title class_">Object</span>) <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>([] <span class="keyword">instanceof</span> <span class="title class_">Object</span>) <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>([] <span class="keyword">instanceof</span> <span class="title class_">Array</span>) <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;&#125; <span class="keyword">instanceof</span> <span class="title class_">Function</span>) <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
-<p>instanceof可以正确判断对象的类型，其内部运行机制是判断在其原型链中是否能找到该类型的原型。只能判断引用数据类型。instanceof可以用来测试一个对象在其原型链中是否存在一个构造函数的prototype属性。</p>
-<h5 id="c-constructor"><a href="#c-constructor" class="headerlink" title="c.constructor"></a>c.<code>constructor</code></h5><p>constructor有两个作用，一是判断数据的类型，二是对象实例通过constructor对象访问它的构造函数。需要注意的是如果创建一个对象来改变他的原型，constructor就不能用来判断数据类型了。</p>
-<h5 id="d-Object-prototype-toString-call"><a href="#d-Object-prototype-toString-call" class="headerlink" title="d.Object.prototype.toString.call()"></a>d.<code>Object.prototype.toString.call()</code></h5><p>直接调用toString方法，是走的重写后的toString逻辑。</p>
-<hr>
-<h4 id="3-null和undefined的区别"><a href="#3-null和undefined的区别" class="headerlink" title="3. null和undefined的区别"></a>3. null和undefined的区别</h4><p>undefined的含义是未定义，一般变量声明了但还没有定义的时候会返回；<br>null的含义是空对象，主要用于赋值给一些可能会返回对象的变量，作为初始化。<br>当使用<code>==</code>进行二者的比较是返回true，使用<code>===</code>返回false</p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2025/05/07/20250507/" rel="prev" title="jump（一）">
+      <i class="fa fa-chevron-left"></i> jump（一）
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://guogananren.github.io/2025/04/29/%E4%BF%AE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Link">
-      <meta itemprop="description" content="its description">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="myblog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/04/29/%E4%BF%AE/" class="post-title-link" itemprop="url">修</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2025-04-29 10:39:17 / 修改时间：10:42:13" itemprop="dateCreated datePublished" datetime="2025-04-29T10:39:17+08:00">2025-04-29</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%9D%82/" itemprop="url" rel="index"><span itemprop="name">杂</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>364</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>近期，又双叒叕迷上了一部国产武侠篇——少年歌行。拢共出了三季，每季至少24级起步，愣是被我两周看完了。可喜也可叹，喜是品之有味，叹是精力无处施展。但这里是讲的另一种感想。对于剧中每个人的称谓我悟了一些。其一，剧中人物大多以全名相称，而对外则会采用昵称或敬称，例如苏甲和萧已拜自同一师门下是要好的师兄弟关系，苏甲和萧已对内（两人之间对话）是以全名相称，拟造一个场景，苏甲叫萧已去就餐，苏甲猛地推开萧已到房门道：萧已你苦了自己也不能苦了肚子啊，你大哥我可要先行一步，不管你了！随后只听房门哐啷哐啷的碰撞着门槛，门口此人已消失不见，扬长而去奔向了食堂。萧已心想：苏甲这厮，辈分乱了不说，进人房门也不礼貌叩门，可得去师父跟前嚼嚼嘴根……<br>这里苏甲是师弟，萧已是师兄，他们之前的称谓则是以全名相称。其二，男女相称，男女之间多以姑娘公子相称.</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://guogananren.github.io/2025/04/28/myword/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Link">
-      <meta itemprop="description" content="its description">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="myblog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/04/28/myword/" class="post-title-link" itemprop="url">myword</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2025-04-28 09:50:38 / 修改时间：15:27:45" itemprop="dateCreated datePublished" datetime="2025-04-28T09:50:38+08:00">2025-04-28</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/cateDemo/" itemprop="url" rel="index"><span itemprop="name">cateDemo</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>16</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="hey-its-wonderful"><a href="#hey-its-wonderful" class="headerlink" title="hey, its wonderful"></a>hey, its wonderful</h2>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://guogananren.github.io/2025/04/27/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Link">
-      <meta itemprop="description" content="its description">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="myblog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/04/27/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2025-04-27 17:58:46" itemprop="dateCreated datePublished" datetime="2025-04-27T17:58:46+08:00">2025-04-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2025-04-28 15:23:28" itemprop="dateModified" datetime="2025-04-28T15:23:28+08:00">2025-04-28</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>367</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -794,6 +422,7 @@ bigInt用于表示任意大的整数，在bigInt出现之前number类型仅能�
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E5%AE%89%E5%85%A8%E7%9A%84undefined%E5%80%BC"><span class="nav-number">1.</span> <span class="nav-text">5. 如何获取安全的undefined值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-%E4%BD%BF%E7%94%A8Object-is-%E4%B8%8E%E6%AF%94%E8%BE%83%E6%93%8D%E4%BD%9C%E7%AC%A6%E2%80%9C-%E2%80%9D%E5%92%8C%E2%80%9C-%E2%80%9D%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">2.</span> <span class="nav-text">6. 使用Object.is()与比较操作符“&#x3D;&#x3D;”和“&#x3D;&#x3D;&#x3D;”的区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-JavaScript%E7%9A%84%E5%8C%85%E8%A3%85%E7%B1%BB%E5%9E%8B"><span class="nav-number">3.</span> <span class="nav-text">7. JavaScript的包装类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89BigInt%E7%9A%84%E6%8F%90%E6%A1%88"><span class="nav-number">4.</span> <span class="nav-text">8. 为什么有BigInt的提案</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E6%98%AF%E7%A9%BA%E5%AF%B9%E8%B1%A1"><span class="nav-number">5.</span> <span class="nav-text">9. 如何判断一个对象是空对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-const%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7%E5%8F%AF%E4%BB%A5%E4%BF%AE%E6%94%B9%E5%90%97"><span class="nav-number">6.</span> <span class="nav-text">10. const对象的属性可以修改吗</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11-new%E6%93%8D%E4%BD%9C%E7%AC%A6%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%AD%A5%E9%AA%A4"><span class="nav-number">7.</span> <span class="nav-text">11. new操作符的实现步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E7%9A%84this%E6%8C%87%E5%90%91%E5%93%AA%E9%87%8C"><span class="nav-number">8.</span> <span class="nav-text">12. 箭头函数的this指向哪里</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13-%E6%8B%93%E5%B1%95%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E4%BD%9C%E7%94%A8%E5%8F%8A%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">9.</span> <span class="nav-text">13. 拓展运算符的作用及使用场景</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#a-%E5%AF%B9%E8%B1%A1%E6%89%A9%E5%B1%95%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">9.1.</span> <span class="nav-text">a.对象扩展运算符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#b-%E6%95%B0%E7%BB%84%E6%8B%93%E5%B1%95%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">9.2.</span> <span class="nav-text">b.数组拓展运算符</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#14-Proxy%E5%8F%AF%E4%BB%A5%E5%AE%9E%E7%8E%B0%E4%BB%80%E4%B9%88%E5%8A%9F%E8%83%BD"><span class="nav-number">10.</span> <span class="nav-text">14. Proxy可以实现什么功能</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
