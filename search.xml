@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>jump（叁）</title>
+    <url>/2025/06/06/20250606/</url>
+    <content><![CDATA[<h4 id="16-对JSON的理解"><a href="#16-对JSON的理解" class="headerlink" title="16. 对JSON的理解"></a>16. 对JSON的理解</h4><p>JSON是一种基于文本的轻量级的数据交换格式。它可以被任何的编程语言读取和作为数据格式来传递。<br>在项目开发中，使用JSON作为前后端数据交换的方式。在前端通过将一个符合JSON格式的数据结构序列化为JSON字符串，然后将他传递到后端，后端通过JSON格式的字符串解析后生成对应的数据结构，以此来实现前后端数据的一个传递。因为JSON的语法是基于js的，因此很容易将JSON和js中的对象弄混，但是应该注意的是JSON和js对象不是一回事，JSON中对象格式更加严格，比如说在JSON中属性值不能为函数，不能出先NaN这样的属性值等，因此大多数的js对象是不符合JSON对象的格式。<br>JSON存在两个方法：<br><code>JSON.stringify()</code><br><code>JSON.parse()</code></p>
+<h4 id="17-JavaScript脚本延迟加在的方式有哪些"><a href="#17-JavaScript脚本延迟加在的方式有哪些" class="headerlink" title="17. JavaScript脚本延迟加在的方式有哪些"></a>17. JavaScript脚本延迟加在的方式有哪些</h4><p>延迟加载就是等页面加载完成之后再加在JavaScript文件。js延迟加载有助于提高页面的加载速度。<br>defer属性：<br>给js脚本添加defer属性，这个属性会让脚本的加载与文档的解析同步解析，然后在文档解析完成后再执行这个脚本文件，这样能使页面的渲染不被阻塞。多个设置了defer属性的脚本按规范来说最后是顺序执行的，分浏览器。<br>async属性：<br>给js脚本添加async属性，这个属性会是脚本异步加载，不会阻塞页面的解析过程，但是当脚本加载完成后会立即执行js脚本，这个时候如果文档没有解析完成同样会阻塞。多个async属性的脚本执行顺序是不可测的。<br>动态创建DOM方式：<br>动态创建DOM标签的方式，可以对文档的加载时间进行监听，当文档加载完成后再动态的创建script标签来引入js脚本。<br>使用setTimeout延迟方式：<br>设置一个定时器来延迟加载js脚本文件。<br>让JS最后加载：<br>将js脚本放在文档的底部，来使js脚本尽可能的在最后来加载执行。</p>
+<h4 id="18-什么是DOM和BOM"><a href="#18-什么是DOM和BOM" class="headerlink" title="18. 什么是DOM和BOM"></a>18. 什么是DOM和BOM</h4><p>DOM：<br>指的是文档对象模型，它指的是把文档当做一个对象，这个对象主要定义了处理网页内容的方法和接口。<br>BOM：<br>指的是浏览器对象模型，他指的是把浏览器当做个对象，这个对象主要定义了与浏览器进行交互的方法和接口。BOM的核心是window，而window对象具有双重角色，它既是通过js访问浏览器窗口的一个接口，又是一个全局对象。这意味着在网页上定义的任何对象、变量和函数，都作为全局对象的一个属性或者方法存在。window对象包含location对象、navigator对象和、screen对象等子对象。DOM的最根本的对象document对象也是BOM对象的一个子对象。</p>
+<h4 id="19-escape-encodeURI-encodeURIComponent的区别"><a href="#19-escape-encodeURI-encodeURIComponent的区别" class="headerlink" title="19. escape,encodeURI,encodeURIComponent的区别"></a>19. escape,encodeURI,encodeURIComponent的区别</h4><p>encodeURI是对整个URI进行转义，将URI中的非法字符转换为合法字符。<br>encodeURIComponent是对URI的组成部分进行转义，所以一些特殊字符也会得到转义。<br>escape和encodeURI作用相同（已弃用）</p>
+<h4 id="20-对Ajax的理解，实现一个Ajax的请求"><a href="#20-对Ajax的理解，实现一个Ajax的请求" class="headerlink" title="20. 对Ajax的理解，实现一个Ajax的请求"></a>20. 对Ajax的理解，实现一个Ajax的请求</h4><p>Ajax是Asynchronous JavaScript and XML的缩写。指的是通过JavaScript的异步通信，从服务器获取XML文档中获取数据，再更新到当前网页的对应部分，而不刷新整个网页。<br>创建Ajax请求对步骤：<br>a.创建一个XMLHttpRequest对象<br>b.xhr对象使用open方法创建一个http请求<br>c.为xhr对象增加请求头等信息，setRequestHeader()<br>d.为xhr对象增加状态监听函数。一个xhr对象一个拥有五个状态，当状态发生变化时会调用函数onreadystatechange，可以通过监听该函数来处理请求成功后的结果。当对象的readyState变为4时，代表服务器返回的数据接收完成。<br>e.判断请求返回的状态。如果状态是2xx或304则代表返回正常。<br>f.通过response中的数据对页面进行更新<br>g.调用sent方法传入参数，来向服务器发送请求。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="variable constant_">SERVER_URL</span> = <span class="string">&#x27;/server&#x27;</span></span><br><span class="line"><span class="keyword">let</span> xhr = <span class="keyword">new</span> <span class="title class_">XMLHttpRequest</span>()</span><br><span class="line"><span class="comment">// 请求方法，请求地址，是否异步和用户的认证信息</span></span><br><span class="line">xhr.<span class="title function_">open</span>(<span class="string">&#x27;GET&#x27;</span>, url, <span class="literal">true</span>)</span><br><span class="line">xhr.<span class="property">onreadystatechange</span> = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">readyState</span> !== <span class="number">4</span>) <span class="keyword">return</span></span><br><span class="line">  <span class="comment">// 请求成功时</span></span><br><span class="line">  <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">state</span> === <span class="number">200</span>) &#123;</span><br><span class="line">    <span class="title function_">handle</span>(<span class="variable language_">this</span>.<span class="property">response</span>)</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="variable language_">this</span>.<span class="property">statusText</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 设置请求失败函数</span></span><br><span class="line">xhr.<span class="property">onerror</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="variable language_">this</span>.<span class="property">statusText</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 设置请求头参数</span></span><br><span class="line">xhr.<span class="property">responseType</span> = <span class="string">&#x27;json&#x27;</span></span><br><span class="line">xhr.<span class="property">setRequestHeader</span> = (<span class="string">&#x27;Accept&#x27;</span>, <span class="string">&#x27;application/json&#x27;</span>)</span><br><span class="line"><span class="comment">// 发送请求</span></span><br><span class="line">xhr.<span class="title function_">send</span>(<span class="literal">null</span>)</span><br></pre></td></tr></table></figure>
+<p>使用Promise封装Ajax</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">getJson</span>(<span class="params">url</span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> promise = <span class="keyword">new</span> <span class="title class_">Promise</span>(<span class="keyword">function</span>(<span class="params">resolve, reject</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> xhr = <span class="keyword">new</span> <span class="title class_">XMLHttpRequest</span>()</span><br><span class="line">    xhr.<span class="title function_">open</span>(<span class="string">&#x27;GET&#x27;</span>, url, <span class="literal">true</span>)</span><br><span class="line">    xhr.<span class="property">onreadystatechange</span> = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">      ...</span><br><span class="line">      <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">state</span> === <span class="number">200</span>) &#123;</span><br><span class="line">        <span class="title function_">resolve</span>(<span class="variable language_">this</span>.<span class="property">response</span>)</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="title function_">reject</span>(<span class="keyword">new</span> <span class="title class_">Error</span>(<span class="variable language_">this</span>.<span class="property">statusText</span>))</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    xhr.<span class="property">onerror</span> = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">      <span class="title function_">reject</span>(<span class="keyword">new</span> <span class="title class_">Error</span>(<span class="variable language_">this</span>.<span class="property">statusText</span>))</span><br><span class="line">    &#125;</span><br><span class="line">    ...</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="keyword">return</span> promise</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="22-ES6与CommonJS模块有什么异同"><a href="#22-ES6与CommonJS模块有什么异同" class="headerlink" title="22. ES6与CommonJS模块有什么异同"></a>22. ES6与CommonJS模块有什么异同</h4><p>不同点：<br>CommonJS是对模块的浅拷贝；ES6是对模块的引用。即ES6只存只读，不能改变其值，类似const。<br>共同点：<br>都可以对引入的对象进行赋值，即对对象内部属性的值进行改变。</p>
+<h4 id="23-for…in和for…of的区别"><a href="#23-for…in和for…of的区别" class="headerlink" title="23. for…in和for…of的区别"></a>23. for…in和for…of的区别</h4><p>for…of遍历键值，for…in遍历键名。<br>for…of只会遍历当前对象，for…in会遍历对象的整个原型链，性能很差。<br>对于数组的遍历：<br>for…of只返回数组的下标对应值，for…in会返回数组中所有的可枚举属性（包括原型链上可枚举的属性）<br>for…of循环可以用来遍历数组、可迭代对象、字符串、Set、Map和Generator对象，for…in主要是为了遍历对象而生，不适用于数组。</p>
+<h4 id="24-ajax、fetch、axios的区别"><a href="#24-ajax、fetch、axios的区别" class="headerlink" title="24. ajax、fetch、axios的区别"></a>24. ajax、fetch、axios的区别</h4><p>ajax（AsynchronousJavascriptAndXml）：<br>是一种创建交互式网页应用的网页开发技术。它是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。通过在后台与服务器进行少量数据交换，Ajax可以使网页实现异步更新。<br>本身是一种MVC编程，不符合前端MVVM。<br>Fetch：<br>是ajax的替代品，在es6出现，使用es6的promise对象。fetch不是ajax的进一步封装，没有使用XMLHttpRequest对象。<br>缺点是只对网络请求报错，对400,500的请求都当做成功。<br>axios：<br>基于Promise封装的Http客户端。<br>浏览器发起XMLHttpRequest请求。</p>
+<h4 id="25-对原型、原型链的理解"><a href="#25-对原型、原型链的理解" class="headerlink" title="25. 对原型、原型链的理解"></a>25. 对原型、原型链的理解</h4><p>原型：<br>在js中使用构造函数来创建一个对象时，每一个构造函数的内部都有一个prototype属性，他的属性是一个对象，这个对象包含了可以由该构造函数的所有实例共享的属性和方法。当使用构造函数新建一个对象后，在这个对象的内部将包含一个指针，这个指针指向构造函数的prototype属性对应值，在es5中这个指针被称为对象的原型。可以使用__proto__来访问这一属性，但直接这样访问是不规范的，es5新增了一个Object.getPrototypeOf()方法，通过调用它来获取对象的原型。<br>原型链：<br>当访问一个对象的属性时，如果对象内部不存在这个属性，那么他就会去他的原型对象里去找，原型对象又会有自己的原型，一直这样找下去，这就是原型链的概念。<br>原型链的尽头一般都是Object.prototype所有这就是新建的对象为什么能够使用toString()等方法的原因。<br>js对象是通过引用来传递的，创建的每一个新对象实例中并没有一份属于自己的原型副本。当修改原型时，与之相关的对象也会继承这一改变。</p>
+<h4 id="26-原型链的终点是什么？如何打印出原型链的终点？"><a href="#26-原型链的终点是什么？如何打印出原型链的终点？" class="headerlink" title="26. 原型链的终点是什么？如何打印出原型链的终点？"></a>26. 原型链的终点是什么？如何打印出原型链的终点？</h4><p>由于Object是构造函数，原型链的终点是Object.prototype.__proto__，而Object.prototype.__proto__&#x3D;&#x3D;&#x3D; null &#x2F;&#x2F; true。所以，原型链的终点是null。原型链上所有的原型都是对象，所有的对象最终都是由Object构造的。</p>
+]]></content>
+      <categories>
+        <category>8文</category>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>June</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2025/04/27/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -19,30 +45,6 @@
 ]]></content>
       <tags>
         <tag>demo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>myword</title>
-    <url>/2025/04/28/myword/</url>
-    <content><![CDATA[<h2 id="hey-its-wonderful"><a href="#hey-its-wonderful" class="headerlink" title="hey, its wonderful"></a>hey, its wonderful</h2>]]></content>
-      <categories>
-        <category>cateDemo</category>
-      </categories>
-      <tags>
-        <tag>demo</tag>
-        <tag>tags</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>修</title>
-    <url>/2025/04/29/%E4%BF%AE/</url>
-    <content><![CDATA[<p>近期，又双叒叕迷上了一部国产武侠篇——少年歌行。拢共出了三季，每季至少24级起步，愣是被我两周看完了。可喜也可叹，喜是品之有味，叹是精力无处施展。但这里是讲的另一种感想。对于剧中每个人的称谓我悟了一些。其一，剧中人物大多以全名相称，而对外则会采用昵称或敬称，例如苏甲和萧已拜自同一师门下是要好的师兄弟关系，苏甲和萧已对内（两人之间对话）是以全名相称，拟造一个场景，苏甲叫萧已去就餐，苏甲猛地推开萧已到房门道：萧已你苦了自己也不能苦了肚子啊，你大哥我可要先行一步，不管你了！随后只听房门哐啷哐啷的碰撞着门槛，门口此人已消失不见，扬长而去奔向了食堂。萧已心想：苏甲这厮，辈分乱了不说，进人房门也不礼貌叩门，可得去师父跟前嚼嚼嘴根……<br>这里苏甲是师弟，萧已是师兄，他们之前的称谓则是以全名相称。其二，男女相称，男女之间多以姑娘公子相称.</p>
-]]></content>
-      <categories>
-        <category>杂</category>
-      </categories>
-      <tags>
-        <tag>oc</tag>
       </tags>
   </entry>
   <entry>
@@ -188,6 +190,30 @@ bigInt用于表示任意大的整数，在bigInt出现之前number类型仅能�
       </categories>
       <tags>
         <tag>June</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>修</title>
+    <url>/2025/04/29/%E4%BF%AE/</url>
+    <content><![CDATA[<p>近期，又双叒叕迷上了一部国产武侠篇——少年歌行。拢共出了三季，每季至少24级起步，愣是被我两周看完了。可喜也可叹，喜是品之有味，叹是精力无处施展。但这里是讲的另一种感想。对于剧中每个人的称谓我悟了一些。其一，剧中人物大多以全名相称，而对外则会采用昵称或敬称，例如苏甲和萧已拜自同一师门下是要好的师兄弟关系，苏甲和萧已对内（两人之间对话）是以全名相称，拟造一个场景，苏甲叫萧已去就餐，苏甲猛地推开萧已到房门道：萧已你苦了自己也不能苦了肚子啊，你大哥我可要先行一步，不管你了！随后只听房门哐啷哐啷的碰撞着门槛，门口此人已消失不见，扬长而去奔向了食堂。萧已心想：苏甲这厮，辈分乱了不说，进人房门也不礼貌叩门，可得去师父跟前嚼嚼嘴根……<br>这里苏甲是师弟，萧已是师兄，他们之前的称谓则是以全名相称。其二，男女相称，男女之间多以姑娘公子相称.</p>
+]]></content>
+      <categories>
+        <category>杂</category>
+      </categories>
+      <tags>
+        <tag>oc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>myword</title>
+    <url>/2025/04/28/myword/</url>
+    <content><![CDATA[<h2 id="hey-its-wonderful"><a href="#hey-its-wonderful" class="headerlink" title="hey, its wonderful"></a>hey, its wonderful</h2>]]></content>
+      <categories>
+        <category>cateDemo</category>
+      </categories>
+      <tags>
+        <tag>demo</tag>
+        <tag>tags</tag>
       </tags>
   </entry>
 </search>
